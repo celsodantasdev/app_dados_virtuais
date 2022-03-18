@@ -10,86 +10,68 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="9dp"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonD6"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/telaD6"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/_4df50c445933b6a8a260b0db6438536" />
 
     <Button
-        android:id="@+id/buttonD6"
+        android:id="@+id/telaD6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="1dp"
         android:text="@string/d6"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonD12"
+        app:layout_constraintEnd_toStartOf="@+id/telaD12"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/buttonD12"
+        android:id="@+id/telaD12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="4dp"
         android:text="@string/d12"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonD20"
-        app:layout_constraintStart_toEndOf="@+id/buttonD6" />
+        app:layout_constraintEnd_toStartOf="@+id/telaD20"
+        app:layout_constraintStart_toEndOf="@+id/telaD6"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/buttonD20"
+        android:id="@+id/telaD20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="4dp"
-        android:text="D20"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="33dp"
+        android:text="@string/d20"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonD12" />
-
-    <TextView
-        android:id="@+id/textResultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="8dp"
-        android:textColor="#3F51B5"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonD12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        tools:text="1" />
+        app:layout_constraintStart_toEndOf="@+id/telaD12" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Jogue um dos dados!"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/bungee_inline"
+        android:text="jogue um Dado!"
         android:textColor="#3F51B5"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:text="O resultado é: "
+        android:fontFamily="@font/bungee_inline"
+        android:text="As opções são: "
         android:textColor="#3F51B5"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/telaD20"
+        app:layout_constraintEnd_toStartOf="@+id/telaD20" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
